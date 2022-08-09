@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Il-bF-VV9">
-                                <rect key="frame" x="0.0" y="44" width="428" height="848"/>
+                                <rect key="frame" x="20" y="44" width="388" height="848"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora Atual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZh-Gt-URo">
-                                        <rect key="frame" x="124.66666666666669" y="88" width="179" height="48"/>
+                                        <rect key="frame" x="104.66666666666669" y="40" width="179" height="48"/>
                                         <color key="tintColor" name="bgColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <color key="textColor" name="bgColor"/>
@@ -30,7 +30,7 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="re9-bi-YG2">
-                                        <rect key="frame" x="147" y="144" width="134" height="60"/>
+                                        <rect key="frame" x="127" y="98" width="134" height="60"/>
                                         <color key="tintColor" name="bgColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <color key="textColor" name="bgColor"/>
@@ -41,9 +41,9 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="dZh-Gt-URo" firstAttribute="top" secondItem="6Il-bF-VV9" secondAttribute="top" constant="88" id="KcY-HP-bEG"/>
+                                    <constraint firstItem="dZh-Gt-URo" firstAttribute="top" secondItem="6Il-bF-VV9" secondAttribute="top" constant="40" id="KcY-HP-bEG"/>
                                     <constraint firstItem="dZh-Gt-URo" firstAttribute="centerX" secondItem="6Il-bF-VV9" secondAttribute="centerX" id="PCj-Ml-YeU"/>
-                                    <constraint firstItem="re9-bi-YG2" firstAttribute="top" secondItem="dZh-Gt-URo" secondAttribute="bottom" constant="8" symbolic="YES" id="Yot-SO-l6d"/>
+                                    <constraint firstItem="re9-bi-YG2" firstAttribute="top" secondItem="dZh-Gt-URo" secondAttribute="bottom" constant="10" id="Yot-SO-l6d"/>
                                     <constraint firstItem="dZh-Gt-URo" firstAttribute="centerX" secondItem="re9-bi-YG2" secondAttribute="centerX" id="zdH-kV-JZC"/>
                                 </constraints>
                             </view>
@@ -51,10 +51,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.36470588240000001" green="0.79607843140000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="6Il-bF-VV9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HBv-BI-bGd"/>
-                            <constraint firstItem="6Il-bF-VV9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Nzl-Md-vPj"/>
+                            <constraint firstItem="6Il-bF-VV9" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HBv-BI-bGd"/>
+                            <constraint firstItem="6Il-bF-VV9" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="20" id="Nzl-Md-vPj"/>
                             <constraint firstItem="6Il-bF-VV9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bfv-BQ-PyF"/>
+                            <constraint firstItem="6Il-bF-VV9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="tqA-Pe-sH9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Il-bF-VV9" secondAttribute="bottom" id="vfD-hG-D4x"/>
+                            <constraint firstAttribute="trailing" secondItem="6Il-bF-VV9" secondAttribute="trailing" constant="20" id="y3A-LU-D4a"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,7 +70,7 @@
     </scenes>
     <resources>
         <namedColor name="bgColor">
-            <color red="0.95658820870000005" green="0.98950916529999999" blue="0.91763728860000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.9570000171661377" green="0.99000000953674316" blue="0.9179999828338623" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
